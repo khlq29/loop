@@ -1,6 +1,7 @@
 package com.genericUtils;
 
 import java.util.Random;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
@@ -23,8 +24,14 @@ public class JavaUtility {
 public static String getCurrentDate()
 {
 	Date date = new Date();
-	String currentdate = date.toString();
-	return currentdate;
+
+    // Define the date format
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+
+    // Format the date object to the desired format
+    String currentDateTime = dateFormat.format(date);
+
+    return currentDateTime;
 }
 
 

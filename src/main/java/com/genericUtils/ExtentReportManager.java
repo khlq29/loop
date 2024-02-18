@@ -28,12 +28,12 @@ public class ExtentReportManager implements ITestListener{
 		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName); //specify location of the report
 		
 		sparkReporter.config().setDocumentTitle("RestAssuredAutomationProject"); //title of report
-		sparkReporter.config().setReportName("AdNabu"); // name of the report
+		sparkReporter.config().setReportName("Loop"); // name of the report
 		sparkReporter.config().setTheme(Theme.DARK);
 		
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		extent.setSystemInfo("Application", "AdNabu");
+		extent.setSystemInfo("Application", "Loop");
 		extent.setSystemInfo("Operating System", System.getProperty("os.name"));
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
 		extent.setSystemInfo("Environment", "QA");

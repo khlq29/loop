@@ -38,6 +38,7 @@ public class BaseClass {
 	public JavaUtility jLib = new JavaUtility();
 	public WebDriverUtility wLib = new WebDriverUtility();
 
+
 	public WebDriver driver = null;
 
 	/*
